@@ -3,7 +3,8 @@ import matplotlib.pyplot as plt
 from numpy.polynomial import polynomial as P
 import os
 
-SAVE_DIR = "."
+SAVE_DIR = "./img"
+os.makedirs(SAVE_DIR, exist_ok=True)
 
 np.random.seed(42)
 
@@ -367,3 +368,5 @@ for deg in [2, 3, 4, 5]:
     print(f"{deg:<10} {err_n:<25.6f} {err_s:<25.6f} {cond:<25.6e}")
 
 print("\n=== ВСЕ ГРАФИКИ СОХРАНЕНЫ В", SAVE_DIR, "===")
+
+plt.show()

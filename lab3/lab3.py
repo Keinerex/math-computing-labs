@@ -303,7 +303,7 @@ if __name__ == "__main__":
 
     plt.suptitle('Решение нелинейной системы: sin(x−y) − xy = −1,  x²−y² = 0.75',
                  fontsize=12, y=1.01)
-    save_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'convergence.png')
+    save_path = './convergence.png'
     plt.savefig(save_path, dpi=150, bbox_inches='tight')
     print(f"  График сохранён: {save_path}")
     plt.show()

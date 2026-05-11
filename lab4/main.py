@@ -28,7 +28,8 @@ import matplotlib.gridspec as gridspec
 import warnings
 warnings.filterwarnings("ignore")
 
-SAVE_DIR = os.path.dirname(os.path.abspath(__file__))
+SAVE_DIR = "./img"
+os.makedirs(SAVE_DIR, exist_ok=True)
 
 # ──────────────────────────────────────────────────────────
 #  Функция и область определения
